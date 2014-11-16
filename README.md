@@ -1,4 +1,4 @@
 multiterm2xml
 =============
 
-MultiTerm XML to Excel Converter
+MultiTerm XML to Excel Converter.
