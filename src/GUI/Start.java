@@ -74,8 +74,8 @@ public class Start extends javax.swing.JFrame {
         setTitle("TermXML zu Excel Konvertierer");
         setResizable(true);
         setLocation(200, 200);
-        filePanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Dateien wählen"));
-        open.setText("Öffnen");
+        filePanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Dateien w√§hlen"));
+        open.setText("√ñffnen");
         open.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
             	openActionPerformed(evt);
@@ -87,8 +87,8 @@ public class Start extends javax.swing.JFrame {
             	createActionPerformed(evt);
             }
         });
-        sourceLabel.setText("Quelldatei wählen");
-        destinationLabel.setText("Zieldatei wählen");
+        sourceLabel.setText("Quelldatei w√§hlen");
+        destinationLabel.setText("Zieldatei w√§hlen");
 
         javax.swing.GroupLayout filePanelLayout = new javax.swing.GroupLayout(filePanel);
         filePanel.setLayout(filePanelLayout);
@@ -132,7 +132,7 @@ public class Start extends javax.swing.JFrame {
                 startActionPerformed(evt);
             }
         });
-        close.setText("Schließen");
+        close.setText("Schlie√üen");
         close.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
             	closeActionPerformed(evt);
@@ -140,7 +140,7 @@ public class Start extends javax.swing.JFrame {
         });
         //progressBar.setStringPainted(true);
         menuFile.setText("Datei");
-        menuClose.setText("Schließen");
+        menuClose.setText("Schlie√üen");
         menuClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
             	closeActionPerformed(evt);
@@ -219,11 +219,11 @@ public class Start extends javax.swing.JFrame {
     private void startActionPerformed(java.awt.event.ActionEvent evt) {
     	
     	if(this.openField.getText().equals("")){
-    		error = new ErrorPopup("Keine XML Datei gew‰hlt");
+    		error = new ErrorPopup("Keine XML Datei gew√§hlt");
     		error.setVisible(true);
     	}
     	else if(!this.openField.getText().contains(".xml")){
-    		error = new ErrorPopup("Keine XML Datei gew‰hlt");
+    		error = new ErrorPopup("Keine XML Datei gew√§hlt");
     		error.setVisible(true);
     	}
     	else if(!new File(this.openField.getText()).exists()){
@@ -231,12 +231,12 @@ public class Start extends javax.swing.JFrame {
     		error.setVisible(true);
     	}
     	else if(this.createField.getText().equals("")){
-    		error = new ErrorPopup("Keine Excel Datei gewählt");
+    		error = new ErrorPopup("Keine Excel Datei gew√§hlt");
     		error.setVisible(true);
 
     	}
     	else if(!this.createField.getText().contains(".xls")){
-    		error = new ErrorPopup("Keine Excel Datei gewählt");
+    		error = new ErrorPopup("Keine Excel Datei gew√§hlt");
     		error.setVisible(true);
     	}
     	else{
